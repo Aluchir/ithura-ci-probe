@@ -1,0 +1,10 @@
+name: ci
+on: [pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Always fails (test)
+        run: |
+          echo "This check fails on purpose to test Ithura agent CI feedback."
+          exit 1
